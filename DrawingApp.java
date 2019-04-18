@@ -10,9 +10,10 @@ public class DrawingApp {
 	//Triangle triangle = new Triangle();
 		
 	BeanFactory factory = (BeanFactory) (new ClassPathXmlApplicationContext(new String[] {"file:src/com/lve2code/springdemo/spring.xml"}));
-	Triangle triangle = (Triangle)factory.getBean("triangle");
+	HelloWorld obj = (HelloWorld)factory.getBean("helloWorld");
+	
+    obj.getMessage();
 		
-	triangle.draw();
 	}
 
 }

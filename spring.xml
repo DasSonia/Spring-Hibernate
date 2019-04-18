@@ -14,4 +14,9 @@ http://www.springframework.org/schema/context/spring-context-4.3.xsd http://www.
 	<property name="type" value="Equilateral" />
 	</bean>
 	
+	<bean id = "helloWorld" class = "com.lve2code.springdemo.HelloWorld">
+      <property name = "message" value = "Hello Spring"/>
+   </bean>
+	
+	
 </beans>
